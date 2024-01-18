@@ -10,16 +10,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Germaine & Jean-Marc se marie!</title>
+    <title>Arty & Magesh se marient!</title>
     <meta name="description" content="On souhaite vous inviter à notre mariage.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Germaine & Jean-Marc se marie">
+    <meta property="og:title" content="Arty & Magesh se marient">
     <meta property="og:description" content="On souhaite vous inviter à notre mariage.">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-13-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-13-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 
@@ -68,7 +68,7 @@
     <section class="navigation">
         <header>
             <div class="header-content">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="logo"><a href="#"><img src="img/logo-13.png" alt="Logo"></a></div>
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
@@ -90,20 +90,20 @@
     </section>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="hero-content text-center">
-                    <img src="img/logo-lg.png">
+                    <img src="img/logo-13-lg.png">
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">Vous venez</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
+<!--        <div class="row">-->
+<!--            <div class="col-sm-4 hidden-xs"></div>-->
+<!--            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"-->
+<!--                                                           class="btn btn-accent btn-large rsvp-btn">Vous venez</a></div>-->
+<!--            <div class="col-sm-4 hidden-xs"></div>-->
+<!--        </div>-->
+        <div class="down-arrow floating-arrow"><a href="#rsvp-form"><i class="fa fa-angle-down"></i></a></div>
     </div>
-    <div class="down-arrow floating-arrow"><a href="#rsvp-form"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
 <section class="events section-padding" id="events">
@@ -195,7 +195,7 @@
             <div class="col-md-12 text-center">
                 <h3>Aidez nous à immortaliser ce moment inoubliable!</h3>
                 <p>Tagger vos photos avec le hashtag
-                    <a href="https://instagram.com/explore/tags/GermaineEtJeanMarc/" target="_blank">#GermaineEtJeanMarc</a>
+                    <a href="https://instagram.com/explore/tags/Arty&Magesh/" target="_blank">#Arty&Magesh</a>
                 </p>
             </div>
         </div>
@@ -208,9 +208,9 @@
 </section>
 
 <section id="video-bg" class="hidden-sm hidden-xs">
-<!--    <div id="bgndVideo" class="player"-->
-<!--         data-property="{videoURL:'https://youtu.be/GL1rU1WzfVE',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:00, stopAt:110, opacity:1}">-->
-<!--    </div>-->
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://youtu.be/GL1rU1WzfVE',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:00, stopAt:110, opacity:1}">
+    </div>
     <div id="video-content">
         <h5>Château des hauts de provins</h5>
     </div>
@@ -279,7 +279,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Vous venez ?</h3>
+                <h3>Vous serez présent ?</h3>
                 <p>Si possible, répondre avant le 30 mars 2024</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
@@ -304,8 +304,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Nombre d'accompagnant"
+                                                                  placeholder="Nb d'accompagnant"
                                                                   required>
                             </div>
                         </div>
@@ -318,6 +317,25 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i><input type="number" name="meat_dish_nb" class=""
+                                                                  min="0"
+                                                                  placeholder="Nb de plats avec viandes"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i><input type="number" name="veg_dish_nb"
+                                                                class="" min="0"
+                                                                placeholder="Nb de plats vegetarien"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
