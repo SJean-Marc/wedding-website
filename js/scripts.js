@@ -273,6 +273,18 @@ function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
 }
 
+var verifierCode = function() {
+    var code = document.getElementById("codeInput").value;
+
+    if (MD5(code) === 'b59c67bf196a4758191e42f76670ceba') {
+        window.location.href = "mariage.html";
+    } else if (MD5(code) === '934b535800b1cba8f96a5d72f72f1611') {
+        window.location.href = "reception.html";
+    } else {
+        $('#alert-wrapper-index').html(alert_markup('danger', '<strong>Un souci!</strong> Le code est incorrecte.'));
+    }
+};
+
 // MD5 Encoding
 var MD5 = function (string) {
 
@@ -491,3 +503,4 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
+
