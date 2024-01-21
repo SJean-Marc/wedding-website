@@ -822,7 +822,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-cutlery {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-cutlery, .fa-phone {
         font-size: 14px;
         position: absolute;
         top: 50%;
@@ -923,6 +923,14 @@ Custom section
 .wp3.custom-section p{
   margin: 0 0 0px;
   padding-bottom: 0px;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 

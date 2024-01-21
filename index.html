@@ -312,9 +312,9 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="nb_extras" class="" min="0"
-                                                                  placeholder="Nb d'accompagnant"
-                                                                  required>
+                                <i class="fa fa-phone" aria-hidden="true"></i><input type="tel" name="tel" id="tel"
+                                                                class="" min="0"
+                                                                placeholder="Numéro de téléphone">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -326,6 +326,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="nb_extras_adult" class="" min="0"
+                                                                  placeholder="Nb d'adultes"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="nb_extras_child" class="" min="0"
+                                                                  placeholder="Nb d'enfants (3-12ans)">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
@@ -346,30 +362,39 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-6 col-sm-6 text-align-right">
                             <a class="btn btn-accent btn-sm btn-custom btn-success"
                                     type="button"
                                     onclick="toggleButtonClass(this)">
                                 On vient à la mairie
                             </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <a class="btn btn-accent btn-sm btn-custom btn-success"
-                                    type="button"
-                                    onclick="toggleButtonClass(this)">
-                                On vient à la cérémonie religieuse
-                            </a>
+                        <div class="col-md-6 col-sm-6 text-align-left">
+                            <input type="checkbox" name="presence_mairie">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-6 col-sm-6 text-align-right">
+                            <a class="btn btn-accent btn-sm btn-custom btn-success"
+                                    type="button"
+                                    onclick="toggleButtonClass(this)">
+                                On vient au rituel indien
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-align-left">
+                            <input type="checkbox" name="presence_thali">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 text-align-right">
                             <a class="btn btn-accent btn-sm btn-custom btn-success"
                                     type="button"
                                     onclick="toggleButtonClass(this)">
                                 On vient à la soirée
                             </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-align-left">
+                            <input type="checkbox" name="presence_soiree" checked>
                         </div>
                     </div>
                     <div class="row">
