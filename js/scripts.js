@@ -509,15 +509,6 @@ var MD5 = function (string) {
     return temp.toLowerCase();
 };
 
-var toggleButtonClass = function (button) {
-    if (button.classList.contains('btn-success')) {
-        button.classList.remove('btn-success');
-        button.classList.add('btn-danger');
-    } else {
-        button.classList.remove('btn-danger');
-        button.classList.add('btn-success');
-    }
-};
 //
 // // #
 //

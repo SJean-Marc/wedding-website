@@ -128,13 +128,18 @@
                     <p><a href="https://g.co/kgs/eXnsiYp">Restaurant Bharati <i class="fa fa-cutlery" aria-hidden="true"></i></a></p>
                 </div>
                 <div class="wp3">
+                    <h4><strong>16h - 17h</strong></h4>
+                    <h5>Café / Thé d'accueil</h5>
+                    <p><a href="https://g.co/kgs/Tm6ZdGh">Château des Hauts de Provins <i class="fa fa-map" aria-hidden="true"></i></a></p>
+                </div>
+                <div class="wp3">
                     <h4><strong>17h - 18h</strong></h4>
                     <h5>Rituel indien</h5>
                     <p><a href="https://g.co/kgs/Tm6ZdGh">Château des Hauts de Provins <i class="fa fa-map" aria-hidden="true"></i></a></p>
                 </div>
                 <div class="wp3 custom-section">
                     <h4><strong>19h - 3h</strong></h4>
-                    <h5>Reception</h5>
+                    <h5>Soirée</h5>
                     <p><a href="https://g.co/kgs/Tm6ZdGh">Château des Hauts de Provins <i class="fa fa-map" aria-hidden="true"></i></a></p>
                 </div>
             </div>
@@ -261,10 +266,10 @@
             <div class="col-md-12 text-center">
                 <h3>Cadeau</h3>
                 <p>
-<!--                    Certaines personnes ont exprimé leur désir de nous offrir un cadeau pour <br /> célébrer ce moment avec nous, et nous avons créé une cagnotte de mariage pour ceux qui souhaitent contribuer.-->
-<!--                    Une urne sera présente lors de notre grand jour.-->
-                    Suite à la demande de plusieurs personnes de nous offrir un cadeau pour célébrer ce moment, nous avons créé une cagnotte de mariage en ligne.
-                    Une urne sera présente lors de notre grand jour.
+                    C'est avec une immense joie que nous vous convions à partager ce moment unique, notre mariage.<br>
+                    Pour ceux qui souhaitent nous faire un cadeau, une urne sera présente pour recueillir vos belles attentions lors la soirée.<br>
+                    Pour plus de praticité, nous avons également créé une cagnotte en ligne.<br>
+                    <i>Retrouvez le lien en cliquant sur l'image ci-dessous</i>
                 </p>
             </div>
         </div>
@@ -299,7 +304,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Vous serez présent ?</h3>
+                <h3>Serez-vous présent ?</h3>
                 <p>Si possible, répondre avant le 30 mars 2024</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
@@ -377,45 +382,56 @@
                             <div class="form-input-group">
                                 <i class="fa fa-file-text "></i>
                                 <input id="comment"
-                                       placeholder="Commentaire"/>
+                                       placeholder="Si vous avez des restrictions alimentaires"/>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 text-align-center">
-                            <a class="btn btn-accent btn-sm btn-custom btn-success"
-                                    type="button"
-                                    onclick="toggleButtonClass(this)">
-                                On vient à la mairie
-                            </a>
+                        <div class="col-md-6 col-sm-6 text-align-right">
+                            <span for='presence_mairie'>
+                                   <strong>
+                                       On vient à la mairie
+                                   </strong>
+                            </span>
                         </div>
-<!--                        <div class="col-md-6 col-sm-6 text-align-left">-->
-<!--                            <input type="checkbox" name="presence_mairie">-->
-<!--                        </div>-->
+
+                        <div class="col-md-6 col-sm-6 text-align-left">
+                            <div class="checkbox-wrapper-34">
+                                <input class='tgl tgl-ios' name= "presence_mairie" id='presence_mairie' type='checkbox' checked>
+                                <label class='tgl-btn' for='presence_mairie'></label>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 text-align-center">
-                            <a class="btn btn-accent btn-sm btn-custom btn-success"
-                                    type="button"
-                                    onclick="toggleButtonClass(this)">
+                        <div class="col-md-6 col-sm-6 text-align-right">
+                            <span>
+                                <strong>
                                 On vient au rituel indien
-                            </a>
+                                </strong>
+                            </span>
                         </div>
-<!--                        <div class="col-md-6 col-sm-6 text-align-left">-->
+                        <div class="col-md-6 col-sm-6 text-align-left">
 <!--                            <input type="checkbox" name="presence_thali">-->
-<!--                        </div>-->
+                            <div class="checkbox-wrapper-34">
+                                <input class='tgl tgl-ios' name= "presence_thali" id='presence_thali' type='checkbox'>
+                                <label class='tgl-btn' for='presence_thali'></label>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 text-align-center">
-                            <a class="btn btn-accent btn-sm btn-custom btn-success"
-                                    type="button"
-                                    onclick="toggleButtonClass(this)">
+                        <div class="col-md-6 col-sm-6 text-align-right">
+                            <span>
+                                <strong>
                                 On vient à la soirée
-                            </a>
+                                </strong>
+                            </span>
                         </div>
-<!--                        <div class="col-md-6 col-sm-6 text-align-left">-->
-<!--                            <input type="checkbox" name="presence_soiree" checked>-->
-<!--                        </div>-->
+                        <div class="col-md-6 col-sm-6 text-align-left">
+                            <div class="checkbox-wrapper-34">
+                                <input class='tgl tgl-ios' name= "presence_soiree"  id='presence_soiree' type='checkbox'>
+                                <label class='tgl-btn' for='presence_soiree'></label>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
@@ -436,7 +452,8 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>On vous remercie <span class="fa fa-heart pulse2"></span></p>
+                <p class="without-bottom-margin">On vous remercie <span class="fa fa-heart pulse2"></span></p>
+                <p>En cas de problème, contactez nous <a href="mailto:artyetmagesh.mariage2024@gmail.com"><i class="fa fa-lg fa-envelope"></i> </br> artyetmagesh.mariage2024@gmail.com</a></p>
             </div>
         </div>
     </div>

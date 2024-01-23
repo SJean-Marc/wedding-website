@@ -8,6 +8,7 @@
 @import "partials/buttons";
 @import "partials/colors";
 @import "partials/layout";
+@import "custom/checkbox";
 
 /* ==========================================================================
 Global Styles
@@ -851,6 +852,13 @@ body.modal-open {
   padding:25px;
 }
 
+/*
+Custom p
+ */
+.without-bottom-margin {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
 
 /*
 Toogle custom
@@ -886,6 +894,25 @@ Custom section
 .text-align-center {
   text-align: center;
 }
+
+//
+// Custom Yes No button
+//
+.screen-reader-only {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+input[type="range"] {
+  width: 30px;
+}
+
+input[type="text"]:invalid {
+  outline: 2px solid red;
+}
+
+
 
 
 /*
