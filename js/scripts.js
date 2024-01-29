@@ -214,11 +214,11 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Une seconde!</strong> En cours de sauvegarde.'));
 
-        if (MD5($('#invite_code').val()) !== 'b59c67bf196a4758191e42f76670ceba'
-            && MD5($('#invite_code').val()) !== '934b535800b1cba8f96a5d72f72f1611') {
+        if (MD5($('#invite_code').val()) !== '4e771f17c63f0fbd16cb9e8188a49844'
+            && MD5($('#invite_code').val()) !== '4954bde5ab6a09df245d15b97e242143') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Un souci!</strong> Le code est incorrecte.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbxJwrLLcqQF7Oo62UIKA-cONnBVCjvvhMwaZ9bDAzQAGY8AmKFibPFnZ87br3YyVh-M/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxUo3a1utyAz1s36ASK8wcN19T073ZCY7pWHFh40hQBJh5oRjyGhQHiI7XAxzVfrlMn/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {

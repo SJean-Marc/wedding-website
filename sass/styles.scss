@@ -895,6 +895,12 @@ Custom section
   text-align: center;
 }
 
+// Custom formular
+
+//#invite_code input[type=text]:invalid {
+//  outline:2px solid blue
+//}
+
 //
 // Custom Yes No button
 //
@@ -908,9 +914,9 @@ input[type="range"] {
   width: 30px;
 }
 
-input[type="text"]:invalid {
-  outline: 2px solid red;
-}
+//input[type="text"]:invalid {
+//  outline: 2px solid red;
+//}
 
 
 
