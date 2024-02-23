@@ -217,7 +217,7 @@ $(document).ready(function () {
 
         if (MD5($('#invite_code').val()) !== '4e771f17c63f0fbd16cb9e8188a49844'
             && MD5($('#invite_code').val()) !== '4954bde5ab6a09df245d15b97e242143') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Un souci!</strong> Nom de famille des mariés incorrecte.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Un souci!</strong> Nom de famille du marié(e) incorrecte.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbxUo3a1utyAz1s36ASK8wcN19T073ZCY7pWHFh40hQBJh5oRjyGhQHiI7XAxzVfrlMn/exec', data)
                 .done(function (data) {
@@ -282,7 +282,7 @@ var verifierCode = function() {
     } else if (MD5(code) === '934b535800b1cba8f96a5d72f72f1611') {
         window.location.href = "reception.html";
     } else {
-        $('#alert-wrapper-index').html(alert_markup('danger', '<strong>Un souci!</strong> Nom de famille des mariés incorrecte.'));
+        $('#alert-wrapper-index').html(alert_markup('danger', '<strong>Un souci!</strong> Nom de famille du marié(e) incorrecte.'));
     }
 };
 
